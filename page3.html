@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Don Mattingly Is Cute </title>
+	<meta charset="utf-8">		
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+<script>
+
+	function headc()
+{
+	if(confirm("HAHAHAHA! HE IS BETTER THAN YOU!"))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+	function backPage()
+{
+	window.location='page2.html';
+}
+
+var counter=0;
+
+function countingup()
+{
+
+	counter = counter + 1;
+	
+	document.getElementById("batnum").innerHTML="You have "+counter+" hits.";
+
+}
+function bigger()
+{
+	document.getElementById("batsize").style.height="350px"
+	document.getElementById("batsize").style.width="350px"
+}
+function smaller()
+{
+	document.getElementById("batsize").style.height="300px"
+	document.getElementById("batsize").style.width="300px"
+}
+
+</script>
+	
+<style>
+	body{
+	background-image: url("maddon.jpg");
+}
+	.demo {
+		border:1px solid #C0C0C0;
+		border-collapse:collapse;
+		padding:2px;
+	}
+	.demo th {
+		border:1px solid #C0C0C0;
+		padding:2px;
+		background:#F0F0F0;
+	}
+	.demo td {
+		border:1px solid #C0C0C0;
+		padding:2px;
+		background:#FFFFFF;
+	}
+	
+	
+.tooltip {
+    position: relative;
+    display:
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+img.absolute
+{
+position:absolute;
+left:500px;
+top:250px;
+}
+</style>
+
+<button onclick="backPage(); window.location='page2.html';"" type="button">Back</button>
+
+</head>
+<body>
+
+	<h1><a onclick="return headc();" href="page4.html">Don Mattingly God</a> </h1>
+	
+<table align="center" class="demo">
+	<thead>
+	<tr>
+		<th>Summary</th>
+		<th class=tooltip>&nbsp;WAR&nbsp;<span class=tooltiptext>Wins Above Replacement</span></th>
+		<th class=tooltip>&nbsp; &nbsp;AB&nbsp;<span class=tooltiptext>At Bats</span></th>
+		<th class=tooltip>&nbsp;R&nbsp;<span class=tooltiptext>Runs Scored/Allowed</span></th>
+		<th class=tooltip>&nbsp;H&nbsp;<span class=tooltiptext>Hits/Hits Allowed</span></th>
+		<th class=tooltip>&nbsp; BA&nbsp;<span class=tooltiptext>Batting Average</span></th>
+		<th class=tooltip>&nbsp; HR&nbsp;<span class=tooltiptext>Home Runs Hit/Allowed</span></th>
+		<th class=tooltip>&nbsp; RBI&nbsp;<span class=tooltiptext>Runs Batted In</span></th>
+		<th class=tooltip>&nbsp;SB&nbsp;<span class=tooltiptext>Stolen Bases</span></th>
+		<th class=tooltip>&nbsp;OBP<span class=tooltiptext>On Base Percentage</span></th>
+		<th class=tooltip>&nbsp;SLG&nbsp;<span class=tooltiptext>Total Bases/At Bats</span></th>
+		<th class=tooltip>&nbsp;OPS+&nbsp;<span class=tooltiptext>OPS+</span></th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>&nbsp;Career</td>
+		<td>&nbsp;42.4</td>
+		<td>&nbsp;7003</td>
+		<td>&nbsp;1007</td>
+		<td>&nbsp;2153</td>
+		<td>&nbsp;.307</td>
+		<td>&nbsp;222</td>
+		<td>&nbsp;1099</td>
+		<td>&nbsp;14&nbsp;</td>
+		<td>&nbsp;.358</td>
+		<td>&nbsp;.471</td>
+		<td>&nbsp;127</td>
+	</tr>
+	</tbody>
+</table>
+<ul>
+	<li style=font-size:26px;color:White;> Click the bat as fast as you can! </li>
+	<li style=font-size:26px;color:White;> You have UNLIMITED clicks! </li>
+	<li style=font-size:26px;color:White;> The highest score recorded is 156,269 clicks. </li>
+
+</ul>
+	
+	<img id="batsize" onmousedown="bigger()" onmouseup="smaller()" onclick="countingup()" class=absolute src="bballbat.png" style="width:300px;height:300px">
+    <br><br><br><br><br><br><br><br><br>
+	<p id="batnum" style=font-size:28px;text-align:center;color:white;font-family:arial; ></p>
+	
+	
+	<div>
+	<br><br><br><br><br>
+ <video class="center" src="donmattinglyisgod.mp4" controls>⁪</video>
+</div>
+  </video>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Don Mattingly Is Cute </title>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+<script>
+
+	function headc()
+{
+	if(confirm("NOOO! DON'T LEAVE!!!"))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+	function backPage()
+{
+	window.location='page1.html';
+}
+
+var motdcounter=0;
+
+function motdtext()
+{
+
+if( motdcounter ==0 )
+{
+	document.getElementById("motd").innerHTML="What a great day it is!";
+	motdcounter=motdcounter+1;
+}
+else if (motdcounter ==1)
+{
+	document.getElementById("motd").innerHTML="Mr. Vona's class is great!";
+	motdcounter=motdcounter+1;
+}
+else
+{
+	document.getElementById("motd").innerHTML="He is a huge fan of Don Mattingly.";
+	motdcounter=motdcounter=0;
+}
+
+}
+</script>	
+
+<style>
+	body{
+	background-image: url("funnydon.jpg");
+}
+img.chase
+{
+position:relative;
+height:400px;
+width: 797px;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-name: fastdon;
+animation-direction: alternate;
+}
+img.chase1
+{
+position:relative;
+height:400px;
+width: 797px;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-name: diffdon;
+animation-direction: alternate;
+}
+
+@keyframes fastdon{
+    from {left: 0px;}
+    to {left:530px;}
+}
+@keyframes diffdon{
+    from {left: 0px;}
+    to {left:530px;}
+}
+img.spinner
+{
+position:relative;
+height:150px;
+width: 200px;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+animation-name: donspin;
+animation-direction: alternate;
+}
+
+@keyframes donspin{
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+</style>
+
+<button onclick="backPage(); window.location='page1.html';"" type="button">Back</button>
+<button onclick="motdtext()"> Message of The Day </button>
+
+</head>
+<body>
+	<p id="motd" style=text-align:center;font-size:42px;color:red;font-family:courier;>  </p>
+	
+	<h1><a onclick="return headc();" href="page3.html">Don Mattingly Slideshow</a> </h1>
+	
+	<img class=spinner src="donhead.png"> <img class=spinner src="donhead.png"> <img class=spinner src="donhead.png"> <img class=spinner src="donhead.png"> <img class=spinner src="donhead.png"> <img class=spinner src="donhead.png">
+	
+	<br><br><br>
+	
+	<img class=chase src="donfunnyface.jpg" style="width:797px;height:400px" border=5">
+	
+	<img class=chase1 src="smileydon.jpg" style="width:797px;height:400px" border=5">
+	
+	<img class=chase src="donsimpson.jpg" style="width:797px;height:400px" border=5">
+	
+	<img class=chase1 src="hittingdon.jpg" style="width:797px;height:400px" border=5">
+	
+	<img class=chase src="happydon.jpg" style="width:797px;height:400px" border=5">
+	
+	<img class=chase1 src="mustachedon.jpg" style="width:797px;height:400px" border=5">
+	
+	<img class=chase src="ewdon.jpg" style="width:797px;height:400px" border=5">
+	
+	<br><br><br>
+	
+	<img class=spinner src="donhead.png"> <img class=spinner src="donhead.png"> <img class=spinner src="donhead.png"> <img class=spinner src="donhead.png"> <img class=spinner src="donhead.png"> <img class=spinner src="donhead.png"> 
+</body>
+
+
+</html>

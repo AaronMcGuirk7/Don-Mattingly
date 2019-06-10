@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Don Mattingly Is Cute </title>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+<script>
+
+	function wallchng()
+{
+	if(confirm("Are you sure?"))
+	document.getElementById("wallpaper").style.backgroundImage = "url('donwall.jpg')"
+}
+	function visitPage()
+{
+	if(confirm("Press OK"))
+	window.location='page5.html';
+}
+
+	function headc()
+{
+	if(confirm("Do you want continue?"))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+	function backPage()
+{
+	window.location='page1.html';
+}
+
+</script>
+<style>
+	body{
+	background-image: url("pointingdon.jpg")
+}
+img.spinner
+{
+position:relative;
+height:150px;
+width: 200px;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+animation-name: donspin;
+animation-direction: alternate;
+}
+
+@keyframes donspin{
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+</style>
+
+<button onclick="wallchng()" type="button">Change Background</button>
+<button onclick="visitPage(); window.location='page5.html';"" type="button">Change Font</button>
+<button onclick="backPage(); window.location='page1.html';"" type="button">Back</button>
+
+</head>
+
+<body id="wallpaper">
+	
+	<h1><a onclick="return headc();" href="page2.html">Don Mattingly</a> </h1>
+
+<h3> Don Mattingly is one of the best baseball players of all time. He is a former professional baseball player and a current manager for
+ the Miami Marlins. He spent his entire 14-year career playing with the New York Yankees. His career batting average is a stunning .307, with 222 homeruns,
+ 7003 plate apperances, 2153 hits and 1099 RBI's. </h3>
+
+<img src="youngdon.jpg" style="width:300px;height:400px" border="5">
+
+<img src="quotedon.jpg"style="width:850px;height:400px" border=5">
+
+<img src="donquote.jpg"style="width:850px;height:400px" border=5">
+
+<img class=spinner src="facedon.png"style="width:400px;height:400px">
+</body>
+
+
+</html>
